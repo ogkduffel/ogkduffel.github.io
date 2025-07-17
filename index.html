@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signage</title>
+  <meta charset="utf-8">
+  <style>
+    body { margin: 0; background: black; }
+    img { width: 100vw; height: 100vh; object-fit: cover; }
+  </style>
+  <script>
+    let images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+    let index = 0;
+    function rotate() {
+      document.getElementById("sign").src = images[index];
+      index = (index + 1) % images.length;
+    }
+    setInterval(rotate, 5000); // wissel elke 5 seconden
+    window.onload = rotate;
+  </script>
+</head>
+<body>
+  <img id="sign" src="">
+</body>
+</html>
