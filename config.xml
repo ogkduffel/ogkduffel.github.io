@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="com.example.googleslides"
+        version="1.0.0"
+        viewmodes="fullscreen">
+  <tizen:application id="com.example.googleslides" package="googleslides" required_version="2.4"/>
+  <content src="index.html"/>
+  <name>Google Slides Kiosk</name>
+  <description>Displays a Google Slides presentation fullscreen</description>
+  <tizen:setting screen-orientation="landscape"
+                 background-support="disable"
+                 context-menu="disable"
+                 web-api-version="2.0"
+                 encryption="disable"
+                 install-location="internal-only"/>
+</widget>
